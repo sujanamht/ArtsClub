@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/event.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <!-- <link rel="stylesheet" href="all.min.css"> -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Sofia"
+  />
+  <style>
+    body h1 {
+      font-family: "Sofia", sans-serif;
+      font-size: 60px;
+      text-shadow: 3px 3px 3px #ababab;
+    }
+  </style>   <title>FAQs</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Logo Here" width="210" height="80" />
+        </a>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li class="sub-menu">
+            <a href="#">Blog</a>
+            <ul>
+              <li><a href="sing.html">Singing</a></li>
+              <li><a href="dance.html">Dancing</a></li>
+              <li><a href="hike.html">Hiking</a></li>
+              <li><a href="camp.html">Camping</a></li>
+              <li><a href="arts.html">Arts</a></li>
+              <li><a href="rock.html">Rock climbing</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="#">Team</a>
+            <ul>
+              <li><a href="team.html">Our team</a></li>
+              <li><a href="review.html">Review</a></li>
+              <li><a href="sign.html">Join us</a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a href="#">Events</a>
+            <ul>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="pevent.html">Past Events</a></li>
+              <li><a href="uevent.html">UpcomingEvents</a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a href="#">Account</a>
+            <ul>
+              <li><a href="login.html">LogIn</a></li>
+              <li><a href="sign.html">SignUp</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="topnav">
+          <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="menu-toggle"><i class="fa fa-bars"></i></div>
+    </nav>
+
+<h1>FAQ</h1>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        
+
+        <img src="img/logo.png" alt="logo" width="280" height="150" />
+
+        <p class="footer-links">
+          <a href="home.html">Home</a> · <a href="about.html">About</a> ·
+          <a href="team.html">Team</a> · <a href="uevent.html">Events</a> ·
+          <a href="faq.html">Faq</a>
+        </p>
+
+        <p class="footer-company-name">WellCreation &copy; 2019</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Maitidevi</span> Kathmandu, Nepal</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+977-9804060377</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@arts.edu.np</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p>
+          <a href="contact.html">Contact Us</a>
+        </p>
+      </div>
+    </footer>
+  
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    //Js for Navbar
+    $(document).ready(function () {
+      $(".menu-toggle").click(function () {
+        $(".navbar").toggleClass("active");
+      });
+      $("ul li").click(function () {
+        $(this).siblings().removeClass("active");
+        $(this).toggleClass("active");
+      });
+    });
+  </script>
+
+
+  <script src="main.js"></script>
+</html>
